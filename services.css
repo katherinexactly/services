@@ -1,0 +1,549 @@
+@font-face{
+    font-family: 'Work';
+    src: url('Fonts/WorkSans-VariableFont_wght.ttf');
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'Work2';
+    src: url('Fonts/WorkSans-VariableFont_wght.ttf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Allura';
+    src: url('Fonts/Allura-Regular.ttf');
+}
+.parallax {
+    background-image: url('Images/services.jpg');
+    height: 100%; 
+    width: 80%;
+    background-attachment: fixed;
+    background-position-y: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .parallax h2{
+    font-family: 'Work';
+    color: #fff;
+    font-weight: bold;
+  }
+
+/* FIRST SECTION */
+#mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+    height: fit-content;
+    padding-bottom: 7rem;
+    background-color: #dcacaa;
+}
+#mission h4{
+    position: relative;
+    left: -5%;
+    top: 0.8rem;
+    font-family: 'Allura';
+    margin-top: 1rem;
+}
+#mission h3{
+    position: relative;
+    right: -5%;
+    font-family: 'Work';
+}
+#wedding-styling-container{
+    width: 60%;
+    height: fit-content;
+    display: inline-flex;
+    margin-top: 1rem;
+}
+#wedding-photo{
+    width: 40%;
+    height: auto;
+    background-image: url(Images/MakeUpGallery/17.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+}
+#wedding-text{
+    width: 60%;
+    padding: 4rem 3rem;
+    background-color: #ffebe0;
+    font-family: 'Work';
+    font-size: 0.9rem;
+    position: relative;
+    line-height: 1.5;
+}
+.btn-about{
+    position: absolute;
+    bottom: -2rem;
+    font-family: 'Work';
+    font-size: 1rem;
+    left: 30%;
+    color: #fff;
+    background-color: #865558;
+    padding: 15px 30px;
+    border: solid #865558 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 1px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+    .btn-about:hover{
+    transition : 1000ms;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #865558;
+    border: solid 2px #865558;
+    }
+
+/* SECOND SECTION */
+#second-section{
+    padding-top: 5rem;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    padding-bottom: 5rem;
+}
+.cardd{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.image{
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+#m{
+    background-image: url(Images/2023_06_01_IMG_9999_834.jpg);
+}
+#h{
+    background-image: url(Images/2023_06_01_IMG_9999_525.jpg);
+}
+#b{
+    background-image: url(Images/2023_06_01_IMG_9999_644.jpg);
+}
+#second-section h4{
+    font-family: 'Allura';
+    position: relative;
+    top: -0.5rem;
+    left: 5%;
+    margin-bottom: 2rem;
+}
+#second-section p{
+    font-size: 0.9rem;
+    font-family: 'Work';
+    text-align: left;
+    width: 75%;
+    margin-bottom: 3rem;
+}
+#second-section h3{
+    font-family: 'Work';
+}
+#second-section h5{
+    font-family: 'Work';
+}
+#services{
+    max-width: 1100px;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+.btn-click{
+    position: relative;
+    top: -1rem;
+    font-family: 'Work';
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #ebaaa8;
+    padding: 10px 15px;
+    border: solid #ebaaa8 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 1px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+    .btn-click:hover{
+    transition : 1000ms;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #ebaaa8;
+    border: solid 2px #ebaaa8;
+    }
+#upper-block{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: #ffebe0;
+    right: -7%;
+    top: -1rem;
+    z-index: 0;
+}
+#lower-block{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: #e6bebd;
+    left: -7%;
+    bottom: -1rem;
+    z-index: 0;
+}
+
+/* VIDEOS */
+.video-class-flex{
+    margin-top: 100px;
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+
+#videos h3{
+    font-family: 'Work';
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#videos h4{
+    font-family: 'Allura';
+    position: relative;
+    top: -0.5rem;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#videos{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+
+/* THIRD */
+#thirdsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#section-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+#section-text p{
+    max-width: 400px;
+    width: 90%;
+    font-family: 'Work';
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: end;
+}
+#block{
+    position: absolute;
+    background-color: #ffebe0;
+    width: 200px;
+    height: 400px;
+    z-index: -1;
+    left: -2rem;
+    top: 3rem
+}
+#section-text h3{
+    font-family: 'Work';
+    margin-bottom: 1rem;
+    width: 90%;
+    text-align: end;
+}
+#photos{
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mirror{
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin: 4rem 0;
+}
+.btn-review{
+    font-family: 'Work';
+    font-size: 1rem;
+    left: 30%;
+    color: #fff;
+    background-color: #ebaaa8;
+    padding: 15px 30px;
+    border: solid #ebaaa8 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 1px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+    .btn-review:hover{
+    transition : 1000ms;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #ebaaa8;
+    border: solid 2px #ebaaa8;
+    }
+/* STRIP */
+#strip{
+    background-image: url('Images/stripcombo.png');
+    height: 20rem; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position-y: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* FOOTER */
+#footer{
+    background-color: #ddadab;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+    width: 100%;
+}
+#footer p{
+    font-family: 'Work';
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px){
+    #wedding-styling-container{
+        width: 80%;
+    }
+    .btn-about{
+        left: 25%;}
+    #section-text{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 700px){
+    #wedding-styling-container{
+        width: 90%;
+    }
+    #wedding-text{
+        padding: 2.5rem;
+    }
+    #strip{
+        height: 15rem;
+        background-position: center;
+    }
+}
+@media screen and (max-width: 710px){
+    #thirdsection{
+        flex-direction: column-reverse;
+    }
+    #section-text{
+        margin-top: 4rem;
+        width: 80%;
+        align-items: flex-start;
+    }
+    #section-text h3, #section-text p{
+        width: 100%;
+        text-align: left;
+    }
+    #block{
+        top: 1rem;
+        width: 270px;
+        left: -1rem;
+    }
+    #mirror{
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+    .btn-review{
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 500px){
+    #wedding-styling-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    #wedding-photo{
+        width: 100%;
+        min-height: 300px;
+        background-image: url(Images/HairGallery/7.jpg);
+    }
+    #wedding-text{
+        width: 100%;
+        padding: 2.5rem 2rem;
+    }
+    .btn-about{
+        left: 28%;
+    }
+}
+@media screen and (max-width: 800px){
+    .parallax {
+
+        width: 100%;
+      }
+}
+@media screen and (max-width: 1400px){
+    .btn-about{
+        left: 20%;
+    }
+}
+@media screen and (max-width: 1160px){
+    .image{
+        height: 200px;
+        width: 200px;
+    }
+    #second-section h5{
+        font-size: 1.1rem;
+    }
+    #services{
+        max-width: unset;
+        gap: 1rem;
+    }
+    .btn-about{
+        left: 15%;
+    }
+    #upper-block{
+        height: 200px;
+        width: 200px;
+        right: -5%;
+    }
+    #lower-block{
+        height: 200px;
+        width: 200px;
+        left: -5%;
+    }
+}
+@media screen and (max-width: 550px){
+      #top-page img{
+        padding-bottom: 15px;
+        width: 150px;
+    }
+}
+@media screen and (max-width: 700px){
+    #services{
+        gap: 1rem;
+        flex-direction: column;
+    }
+    #upper-block{
+        right: -4rem;
+        height: 300px;
+        width: 300px;
+    }
+    #lower-block{
+        left: -4rem;
+        height: 300px;
+        width: 300px;
+    }
+    .image{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media screen and (max-width: 440px){
+    #upper-block{
+        right: -2rem;
+    }
+    #lower-block{
+        left: -2rem;
+    }
+    #second-section h4{
+        position:static;
+        width: 70%;
+        text-align: center;
+    }
+    #mission h3{
+        position: static;
+        text-align: center;
+    }
+    #mission h4{
+        left: unset;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 370px){
+    #upper-block{
+        display: none;
+    }
+    #lower-block{
+        display: none;
+    }
+    #second-section h3{
+        width: 90%;
+    }
+    #second-section h4{
+        text-align: left;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    #second-section p{
+        width: 90%;
+    }
+    .image{
+        width: 270px;
+    }
+}
+@media screen and (max-width: 350px){
+    #block{
+     display: none;
+    }
+    #mirror{
+        width: 270px;
+    }
+    #roundlogo{
+        width: 100px;
+        top: 2rem;
+        right: 0rem;
+    }
+    #photos{
+        width: unset;
+    }
+}
+@supports (-webkit-touch-callout: none){
+    .parallax, #strip{
+        background-attachment: scroll;
+    }
+}
+b{
+    text-decoration: underline;
+}

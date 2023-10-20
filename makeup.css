@@ -1,0 +1,279 @@
+@font-face{
+    font-family: 'Work';
+    src: url('Fonts/WorkSans-VariableFont_wght.ttf');
+    font-weight: 300;
+}
+@font-face{
+    font-family: 'Work2';
+    src: url('Fonts/WorkSans-VariableFont_wght.ttf');
+    font-weight: 400;
+}
+@font-face{
+    font-family: 'Allura';
+    src: url('Fonts/Allura-Regular.ttf');
+}
+.btn-gallery{
+    font-family: 'Work';
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: #fff;
+    background-color: #865558;
+    padding: 15px 30px;
+    border: solid #865558 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 1px;
+    transition : 1000ms;
+    transform: translateY(0);
+    cursor: pointer;
+    }
+    .btn-gallery:hover{
+    transition : 1000ms;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #865558;
+    border: solid 2px #865558;
+    }
+.parallax {
+    background-image: url('Images/2023_06_01_IMG_9999_375.jpg');
+    height: 100%; 
+    width: 80%;
+    background-attachment: fixed;
+    background-position-y: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .parallax h2{
+    font-family: 'Work';
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .btn-about{
+    font-family: 'Work';
+    font-weight: 0;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ebaaa8;
+    padding: 15px 30px;
+    border: solid #ebaaa8 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 1px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    }
+    .btn-about:hover{
+    transition : 1000ms;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #ebaaa8;
+    border: solid 2px #ebaaa8;
+    }
+@supports (-webkit-touch-callout: none){
+    .parallax, #strip{
+        background-attachment: scroll;
+    }
+}
+#footer{
+    background-color: #ddadab;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 0.2rem;
+    width: 100%;
+}
+#footer p{
+    font-family: 'Work';
+}
+#service{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+#photo{
+    background-image: url(Images/makeup.jpg);
+    background-position: center;
+    height: fit-content;
+    width: 40%;
+    min-height: 400px;
+    background-size: cover;
+    position: relative;
+}
+#text{
+    width: 40%;
+}
+#round{
+    width: 120px;
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+
+}
+#service h4{
+    font-family: 'Allura';
+    position: relative;
+    top: 0.5rem;
+
+}
+#service h3, #service p{
+    font-family: 'Work';
+}
+#service p{
+    font-size: 0.9rem;
+}
+#photos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffebe0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+    z-index: 0;
+}
+#triple{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.photocard{
+    width: 30%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+#first{
+    background-image: url(Images/MakeUpGallery/3.jpg);
+}
+#second{
+    background-image: url(Images/MakeUpGallery/8.jpg);
+}
+#third{
+    background-image: url(Images/MakeUpGallery/7.jpg);
+}
+#photos h4{
+    font-family: 'Allura';
+    position: relative;
+    top: 0.5rem;
+    left: -4rem
+
+}
+#photos h3, #photos p{
+    font-family: 'Work';
+}
+#photos p{
+    font-size: 0.9rem;
+    width: 80%;
+    padding-left: 10%;
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+#blockleft{
+    position: absolute;
+    left: -2rem;
+    height: 300px;
+    bottom: -2rem;
+    background-color: #c29492;
+    width: 30%;
+    z-index: -1;
+}
+#blockright{
+    position: absolute;
+    right: -2rem;
+    height: 300px;
+    top: -2rem;
+    background-color: #fff8f4;
+    width: 30%;
+    z-index: -1;
+}
+@media(max-width: 700px){
+    #service{
+        flex-direction: column;
+    }
+    #text{
+        width: 100%;
+    }
+    #photo{
+        width: 100%;
+    }
+    .btn-about{
+        position: absolute;
+        z-index: 1;
+    }
+    #round{
+        right: -1rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .parallax {
+
+        width: 100%;
+      }
+}
+@media(max-width: 600px){
+    #photos p{
+        padding-left: unset;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 550px){
+ #top-page img {
+    padding-bottom: 15px;
+    width: 150pxpx;
+}
+}
+@media(max-width: 500px){
+    #triple{
+        flex-direction: column;
+    }
+    .photocard{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .btn-gallery{
+        margin-top: 1rem;
+    }
+    #service{
+        margin-top: 3rem;
+    }
+    #blockright{
+        width: 80%;
+        top: -1rem;
+        right: -1rem;
+    }
+    #blockleft{
+        width: 80%;
+        bottom: -0.2rem;
+        left: -1rem;
+    }
+}
+@media(max-width: 325px){
+    #round{
+        bottom: -2rem;
+        top: unset;
+    }
+}
+@media(max-width: 400px){
+    #photos h4{
+        left: -1rem;
+    }
+}
